@@ -234,3 +234,10 @@ async function readStudents() {
   console.log(all);
 }
 readStudents();
+
+// TODO-5
+async function updateStudent() {
+  await Student.updateOne({ name: "Ali" }, { age: 22 });
+  console.log("Updated Ali Successfully");
+}
+updateStudent();
