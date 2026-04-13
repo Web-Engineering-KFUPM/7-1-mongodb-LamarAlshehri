@@ -217,3 +217,13 @@ const studentSchema = new mongoose.Schema({
   major: String
 });
 const Student = mongoose.model("Student", studentSchema);
+
+// TODO-3
+async function createStudents() {
+  await Student.insertMany([
+    { name: "Ali", age: 21, major: "CS" },
+    { name: "Sara", age: 23, major: "SE" }
+  ]);
+  console.log("Inserted");
+}
+createStudents();
