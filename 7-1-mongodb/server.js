@@ -241,3 +241,10 @@ async function updateStudent() {
   console.log("Updated Ali Successfully");
 }
 updateStudent();
+
+// TODO-6
+async function deleteStudent() {
+  await Student.deleteOne({ name: "Sara" });
+  console.log("Deleted Sara Successfully");
+}
+deleteStudent();
