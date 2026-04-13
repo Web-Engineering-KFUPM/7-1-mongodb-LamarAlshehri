@@ -227,3 +227,10 @@ async function createStudents() {
   console.log("Inserted");
 }
 createStudents();
+
+// TODO-4
+async function readStudents() {
+  const all = await Student.find();
+  console.log(all);
+}
+readStudents();
