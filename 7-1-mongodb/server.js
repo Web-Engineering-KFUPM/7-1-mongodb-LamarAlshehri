@@ -209,3 +209,11 @@ import mongoose from "mongoose";
 mongoose.connect("mongodb+srv://<db_username>:<db_password>@cluster0.rygtjue.mongodb.net/labDB")
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.log("Connection error:", err));
+
+  // TODO-2: define schema and model
+const studentSchema = new mongoose.Schema({
+  name: String,
+  age: Number,
+  major: String
+});
+const Student = mongoose.model("Student", studentSchema);
