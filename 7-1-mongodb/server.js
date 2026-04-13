@@ -206,7 +206,7 @@
 import mongoose from "mongoose";
 
 // TODO-1: establish connection
-mongoose.connect("mongodb+srv://<db_username>:<db_password>@cluster0.rygtjue.mongodb.net/labDB")
+mongoose.connect("mongodb+srv://lamaraalshehri_db_user:lamarrrr1234@cluster0.ftfkkso.mongodb.net/labDB")
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.log("Connection error:", err));
 
